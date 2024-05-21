@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veriler</title>
+  </head>
+  <body>
+    <h1>Veriler</h1>
+    <div id="app">
+      <p><strong>Adi:</strong> {{ formData.name }}</p>
+      <p><strong>Soyadi:</strong>{{ formData.surname}}</p>
+      <p><strong>E-posta:</strong> {{ formData.email }}</p>
+      <p><strong>Mesaj:</strong> {{ formData.message }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      const formData = JSON.parse(localStorage.getItem("formData"));
+
+      if (formData) {
+        new Vue({
+          el: "#app",
+          data: {
+            formData,
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.baslik{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+}
+.genel{
+    font-size: 40px;
+    padding: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn{
+    margin-top: 2rem;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 2rem;
+    background-color: #004B00;
+    color: #FFFF00;;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.btn:hover{
+    background-color:aqua;
+    color: rgb(228, 11, 55);
+    transform: scale(1.1109);
+}
+img{
+    margin: 64px;
+}

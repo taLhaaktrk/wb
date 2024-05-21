@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mywebsite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Yusuf Talha Aktürk</title>
+  </head>
+  <body
+    background="https://p4.wallpaperbetter.com/wallpaper/294/485/169/stars-sky-universe-starry-night-wallpaper-preview.jpg"
+  >
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="WhatsApp Image 2024-05-19 at 17.14.23.jpeg" alt="logo" />
+      </a>
+      <nav class="navbar active">
+        <a href="#aboutme" class="hakkımda">Hakkımda</a>
+        <a href="#schoolexperiences" class="ogrenim-hayatim">Öğrenim Hayatım</a>
+
+        <a href="#hobilerim" class="hobilerim">Hobilerim</a>
+        <a href="#iletisim" class="iletisim">İletişim</a>
+        <a href="city (1).html">Şehrim</a>
+      </nav>
+    </header>
+
+    <section class="aboutme" id="aboutme">
+      <div class="content">
+        <h3>Yusuf Talha</h3>
+        <p>
+          Selamlar,ben Talha Sakarya Üniversitesi 2.Sınıf öğrencisiyim. Şuan da
+          bölümde data alanında kendimi geliştirmekteyim.Öğrenmeye
+          aç,azimli,hırslı bir şekilde okul hayatımı sürdürmekteyim.Uşaklı 4
+          kişilik bir ailenin en küçük üyesiyim.
+        </p>
+        <a
+          href="https://tr.linkedin.com/in/yusuf-talha-akt%C3%BCrk-997081260/tr?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"
+          class="btn"
+          >Linkedin'de beni görmek için tıklayınız</a
+        >
+        <br />
+        <a
+          href="https://www.canva.com/design/DAF4c4kVW58/LbvddC6LMSXVCs-_RTdPqQ/edit"
+          class="btn"
+          >CV'me buradan ulaşabilirsiniz</a
+        >
+      </div>
+    </section>
+
+    <section class="schoolexperiences" id="schoolexperiences">
+      <h1 class="heading">ÖĞRENİM <span>HAYATIM</span></h1>
+      <div class="box-container">
+        <p class="universite">
+          Hayatımı Uşak'ta Şehit Abdülkadir Anadolu Öğretmen Lisesinde geçirdim.
+          Benim için hayatımda unutamayacağım zamanları geçirdiğim zamanlardı
+          ayrıca şuan da hayatımda bulunan en önemli insanlarla tanıştığım
+          yıllardı.Acısıyla tatlısıyla çok keyif aldığım dönemdi.Ardından
+          üniversite hayatıma başladım.Üniversite hayatımız çok bekledğim gibi
+          başlamadı ama şu anda başlangıcından çok farklı şekilde daha eğlenceli
+          daha koşuşturmalı devam etmekte...
+        </p>
+      </div>
+    </section>
+
+    <section class="hobilerim" id="hobilerim">
+      <h1 class="heading">HOBİLERİM<span> FİLM SEYRETMEK</span></h1>
+      <div class="movies"></div>
+      <script src="data.js"></script>
+    </section>
+
+    <section class="iletisim" id="iletisim">
+      <h1 class="heading">BİZE <span> ULAŞIN</span></h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6045.890851193019!2d30.32439212673626!3d40.74122636731485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaded70ee240b%3A0xd81085b5551312fd!2sBilgisayar%20Ve%20Bili%C5%9Fim%20Bilimleri%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1690553066588!5m2!1str!2str"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form @submit.prevent="submitForm">
+          <h3>Görüş ve Şikayetlerinizi burdaki formdan doldurabilirisiniz.</h3>
+          <div class="inputBox">
+            <i class="bi bi-person-fill"></i>
+            <input
+              type="text"
+              name="name"
+              v-model="formData.name"
+              placeholder="İsminiz"
+              autocomplete="off"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="bi bi-person-fill"></i>
+            <input
+              type="text"
+              name="surname"
+              v-model="formData.surname"
+              placeholder="Soyisminiz"
+              autocomplete="off"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="bi bi-envelope-fill"></i>
+            <input
+              type="email"
+              name="email"
+              v-model="formData.email"
+              placeholder="Mail Adresiniz"
+              autocomplete="off"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="bi bi-card-text"></i>
+            <input
+              type="textarea"
+              name="message"
+              v-model="formData.message"
+              placeholder="Görüşleriniz"
+              autocomplete="off"
+            />
+          </div>
+          <button class="button" type="submit">Gönder</button>
+          <button class="button" @click="clearForm">Temizle</button>
+          <button class="button" @click="showComplaints">Şikayetler</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+
+    <footer class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Ara" />
+        <button class="btn btn-primary">Ara</button>
+      </div>
+      <div class="share">
+        <a href="https://twitter.com/ytalhaaktrk">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/ytalhaakturk/">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="https://tr.linkedin.com/in/yusuf-talha-akt%C3%BCrk-997081260/tr?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

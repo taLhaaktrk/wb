@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  position: relative;
+
+  right: -20px;
+  --main-color: #1047ad;
+  --black-color: #292814;
+  --border: 0.1rem solid rgba(255, 255, 255, 0, 4);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: full-width;
+  transition: 0.2s ease;
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+
+.btn:hover {
+  background-color: aqua;
+  color: rgb(228, 11, 55);
+  transform: scale(1.1109);
+}
+
+.btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 2rem;
+  background-color: #ffffff8f;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.heading {
+  color: rgb(160, 134, 19);
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 6.3rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.1rem solid rgb(160, 134, 19);
+}
+.heading span {
+  font-style: italic;
+  color: turquoise;
+  text-transform: uppercase;
+}
+
+/* base html codes */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(79, 55, 168);
+  border-radius: 3rem;
+}
+p {
+  font-size: 2.4rem;
+}
+.title {
+  color: turquoise;
+  margin-left: 3rem;
+}
+
+/* header start */
+
+.header .logo img {
+  height: 10rem;
+  border-radius: 27%;
+  margin-top: 8px;
+}
+.header {
+  background-color: #ffffff8f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  position: sticky;
+  top: 0;
+  border-radius: 30rem;
+  z-index: 500; /* bunun nedeni scroll aşağı gitse de headerim kaybolmasın(önüne bir şey geçmesin). */
+}
+
+.bi-list {
+  font-size: 3.8rem;
+  cursor: pointer;
+}
+
+.header .navbar a {
+  margin: 0.1rem;
+  font-size: 2.4rem;
+  border-bottom: 0.1rem solid transparent;
+  margin-left: 2.8rem;
+}
+
+.header .navbar:hover {
+  transform: scale(1.2);
+}
+
+.header .navbar a:hover {
+  border-color: aqua;
+  padding-bottom: 0.2rem;
+}
+
+.header .avatar {
+  font-size: 3.8rem;
+  cursor: pointer;
+}
+
+.bi-list {
+  display: none;
+}
+
+/* header end */
+
+/* hakkımda start */
+.aboutme {
+  min-height: 100vh;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.aboutme .content {
+  font-style: italic;
+  max-width: 60rem;
+}
+
+.aboutme .content h3 {
+  font-size: 6.3rem;
+  color: rgb(255, 255, 255);
+}
+
+.aboutme .content p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: rgb(255, 255, 255);
+}
+/* hakkımda end */
+
+/* öğrenim hayatım basladi*/
+
+.schoolexperiences .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.schoolexperiences .box-container .lise img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.schoolexperiences .box-container .lise .img2 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+.schoolexperiences .box-container .universite img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.schoolexperiences .box-container .lise p {
+  font-size: 24px;
+  margin-top: 16px;
+}
+.schoolexperiences .box-container .universite p {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.schoolexperiences .box-container .lise {
+  padding: 3rem;
+
+  color: rgb(160, 134, 19);
+  border-radius: 3%;
+  margin-right: 12px;
+}
+
+.schoolexperiences .box-container .universite {
+  margin-left: 12px;
+  padding: 3rem;
+
+  border-radius: 3%;
+  color: rgb(255, 255, 255);
+}
+.schoolexperiences h1 {
+  font-size: 6.3rem;
+}
+
+.box-container .lise .box-head .lise-foto-aciklama {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.box-container .universite .box-head .üniversite-foto-aciklama {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/* öğrenim hayatım bitti*/
+
+/* projeler basladi */
+
+.projelerim .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.projelerim .box-container .proje {
+  text-align: center;
+  position: relative;
+  border-radius: 3rem;
+  background-color: rgb(129, 141, 137);
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.projelerim .box-container .proje .box-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+.projelerim .box-container .proje .box-head .title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  overflow-wrap: anywhere;
+  margin-left: 6.5rem;
+}
+.projelerim .box-container .proje .info {
+  font-size: 2.4rem;
+}
+
+/* projeler bitti */
+
+/* Hobilerim başladı */
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movies li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  background: #272727;
+}
+
+.movies li img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.movies li h2 {
+  color: #fff;
+  font-size: 1.8em;
+  padding: 15px 10px 0;
+  margin-top: auto;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Hobilerim bitti */
+
+/* iletisim başladı */
+.iletisim .row {
+  display: flex;
+  background-color: darkslategray;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.iletisim .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+.iletisim .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.iletisim .row form h3 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: white;
+}
+.iletisim .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: #646161 solid 1px;
+}
+
+.iletisim .row form .inputBox i {
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+.iletisim .row form .button {
+  margin-top: 2rem;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 2rem;
+  background-color: #ffffff8f;
+  font-size: italic;
+  font-weight: bold;
+}
+.iletisim .row form .button:hover {
+  color: rgb(228, 11, 55);
+  transform: scale(1.1109);
+  cursor: pointer;
+}
+
+.iletisim .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  text-transform: none;
+  background: none;
+}
+
+/* iletisim bitti */
+
+/* footer basladi */
+footer {
+  background-color: #646161;
+  text-align: center;
+}
+footer .search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  font-size: 1.6rem;
+  color: black;
+  padding: 0.8rem;
+  text-transform: none;
+  border-radius: 3rem;
+  height: 7rem;
+  margin-top: 1.1rem;
+}
+
+footer .search .btn {
+  background-color: turquoise;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+footer .share {
+  padding: 2rem 0;
+}
+
+footer .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 36px;
+  margin: 3px;
+  color: black;
+  margin-left: 1.5rem;
+}
+
+/* footer bitti */
+
+/* responsive start */
+
+@media (max-width: 1520px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .logo img {
+    height: 7rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  .projelerim .box-container .proje .box-head .head {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    display: inline-block;
+  }
+  .bi-list {
+    display: inline-block;
+  }
+
+  .section .box {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 9rem);
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+  }
+
+  .header .navbar.active {
+    right: -18rem;
+  }
+
+  .header .navbar a {
+    color: black;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+/* responsive end */
